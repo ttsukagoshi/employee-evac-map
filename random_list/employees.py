@@ -1,4 +1,4 @@
-# Fakerを使って架空の1000名分の従業員リストを作成する
+# Fakerを使って架空の300名分の従業員リストを作成する
 # リストの項目はID、NAME、ADDRESSとして、それに加えてBLOCK（町名）とする
 # Fakerのlocaleは日本語版とし、できたリストをCSVファイルとしてdata/mock_employee_list.csvに保存する
 
@@ -28,7 +28,7 @@ def create_employee_list():
     employee_list = []
 
     # リストに項目を追加
-    for _ in range(1000):
+    for _ in range(300):
         employee_list.append(
             [
                 fake.unique.random_number(digits=8),
