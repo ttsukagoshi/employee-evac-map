@@ -12,7 +12,7 @@
 
 1. Python 3.x の最新版をインストール（[Download Python | Python.org](https://www.python.org/downloads/)）
 2. このレポジトリのコピーをローカルに作成する（「Git って...？」という方には[レポジトリのトップ](https://github.com/ttsukagoshi/employee-evac-map)から`Code` > `Download ZIP`が一番シンプルかと思いますが、`fork`や`git clone`など他の方法をご存知の方はお好きにどうぞ）  
-<img width="1277" alt="「Code」から「Download ZIP」のメニューを表示した画面のスクリーンショット" src="https://github.com/ttsukagoshi/employee-evac-map/assets/55706659/e093c1eb-41cd-4956-b96f-43bf757313a3">
+   <img width="1277" alt="「Code」から「Download ZIP」のメニューを表示した画面のスクリーンショット" src="https://github.com/ttsukagoshi/employee-evac-map/assets/55706659/e093c1eb-41cd-4956-b96f-43bf757313a3">
 
 3. ローカルに作成したフォルダを、以下「作業フォルダ」と呼びます。作業フォルダに移動して、以下のコマンドから Python の仮想環境を作成する：
 
@@ -69,7 +69,7 @@ iconv -f SHIFT_JIS -t UTF-8 input.csv > output.csv
 
 住所を直接地図にマッピングすることもできるが、それだと直接的な個人情報ということで、社内であっても簡単には共有できない。ここではマッピング結果を災害対策会議など、社内資料等で広く共有することを想定して、事前に住所をもとに大字・町丁目を抽出して、その代表地点を地図上にマッピングすることとする。大字・町丁目の表記は、先にダウンロードした位置参照情報のものと揃える。
 
-> ここでは例として、ダミーデータ`data/mock_employee_list.csv`を使用する。ダミーデータは、[Faker](https://faker.readthedocs.io/en/master/)を使って`random_list/employees.py`で生成した。
+> ここでは例として、ダミーデータ`data/mock_employee_list.csv`を使用する。ダミーデータは、[Faker](https://faker.readthedocs.io/en/master/)を使って`scripts/employees.py`で生成した。
 
 ## 1. 時系列での避難情報【事中】
 
