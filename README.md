@@ -2,6 +2,8 @@
 
 従業員の自宅と避難情報が発表されている地域の関係を、Python/Jupyter Notebook を使って可視化するための分析ツール。従業員の住所とは関係なく、避難情報が発表された地区の地理的・時系列的な広がりを可視化するためにも使用可能。
 
+<img width="1279" alt="警戒レベルに応じて色分けされた従業員ごとのマーカーがプロットされた地図のスクリーンショット画像" src="https://github.com/ttsukagoshi/employee-evac-map/assets/55706659/9f390298-179f-4c5c-9cfa-8b30e4358e6b">
+
 > 以下、2023 年 7 月 15 日から 16 日朝にかけて秋田市で発表された避難情報を例にしています。
 
 ## 0. 下準備【事前】
@@ -10,7 +12,8 @@
 
 1. Python 3.x の最新版をインストール（[Download Python | Python.org](https://www.python.org/downloads/)）
 2. このレポジトリのコピーをローカルに作成する（「Git って...？」という方には[レポジトリのトップ](https://github.com/ttsukagoshi/employee-evac-map)から`Code` > `Download ZIP`が一番シンプルかと思いますが、`fork`や`git clone`など他の方法をご存知の方はお好きにどうぞ）  
-   （スクショ）
+<img width="1277" alt="「Code」から「Download ZIP」のメニューを表示した画面のスクリーンショット" src="https://github.com/ttsukagoshi/employee-evac-map/assets/55706659/e093c1eb-41cd-4956-b96f-43bf757313a3">
+
 3. ローカルに作成したフォルダを、以下「作業フォルダ」と呼びます。作業フォルダに移動して、以下のコマンドから Python の仮想環境を作成する：
 
 ```
