@@ -9,3 +9,11 @@
 
 # Environments
 env/
+
+# Input/Output Files
+data/
+!data/akita_evac_all.csv
+!data/akita-2022-ichijoho.csv
+!data/mock_employee_list.csv
+maps/*.html
+!maps/sample/**/*
