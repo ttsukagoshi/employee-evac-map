@@ -1,4 +1,4 @@
-black==23.7.0
+black==24.3.0
 faker==19.2.0
 folium==0.14.0
 jupyter==1.0.0
